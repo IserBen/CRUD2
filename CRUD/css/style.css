@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+
+}
+
+
+
+
+
+
+
+
+.main-login{
+
+  
+    width: 100vw; /**largura do main login**/
+    height: 100vh;  /**altura do main login**/
+    background-image: linear-gradient(to top, white, red);
+    display:flex; /**faz com que TODO o conteúdo do main login se alinhe no eixo X**/
+    justify-content: center; /**determina que o conteúdo deve se alinhar ao centro do eixo X**/
+    align-items: center; /**determina que o conteúdo deve se alinhar ao centro do eixo Y**/
+  
+
+}
+
+.left-login{
+    /**Determinando e alinhando conteúdo a divisão correspondente**/
+    width: 50vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; /**determina a direção do termo flex no left login**/
+}
