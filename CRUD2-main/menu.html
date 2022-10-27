@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <h3>Tabela de Cadastros</h3>
+    <img src='img\opcoes.png'>
+</head>
+<body>
+    <hr>
+    <input type="text" id="txtBusca" placeholder="Buscar..."/>
+    <img src="img\lupa.png">
+    <button class = "btn-login"> Cadastro</button>  <!--Botão de Cadastro-->
+
+
+        <div class = "textfield">
+            <table border="1">
+                <tr>    <!--criando tabela, mas provavelmente não é assim que vamos usar-->
+                    <td>Nome</td>
+                    <td>Idade</td>
+                    <td>Profissão</td>
+                </tr>
+                <tr>
+                    <td>Ted</td>
+                    <td>22</td>
+                    <td>Estudante</td>
+                </tr>
+                <tr>
+                    <td>Ralf</td>
+                    <td>26</td>
+                    <td>Designer</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        
+        <script>    // aqui abri a "area" em java script aproposito em js se comenta com essas duas barrinhas
+            var nome = window.prompt('Qual é o seu nome?') //nessa area, tudo oq escrevemos é em js
+            var idade = window.prompt('Qual é a sua idade?') //esses comandos são comandos para dar uma informação à uma variavel atravez do popup
+            var prof = window.prompt('Qual é a sua profissão')
+            document.write('<h2>Seja bem vindo(a), ' + nome, '! é um prazer em te conhecer!</h2>')
+
+
+
+
+        </script>
+
+
+    
+</body>
+</html>
