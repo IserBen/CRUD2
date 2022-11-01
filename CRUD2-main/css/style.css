@@ -1,6 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 body {
   margin: 0;
-
+  font-family: 'Noto Sans', sans-serif;
 }
 
 
@@ -15,7 +18,7 @@ body {
   
     width: 100vw; /**largura do main login**/
     height: 100vh;  /**altura do main login**/
-    background-image: linear-gradient(to top, rgb(43, 52, 102), rgb(33, 36, 58) );
+    background-image: linear-gradient(to top, rgb(43, 52, 102), rgb(43, 43, 77) );
     display:flex; /**faz com que TODO o conteúdo do main login se alinhe no eixo X**/
     justify-content: center; /**determina que o conteúdo deve se alinhar ao centro do eixo X**/
     align-items: center; /**determina que o conteúdo deve se alinhar ao centro do eixo Y**/
@@ -35,7 +38,15 @@ body {
 
 .left-login >h1 {
 
-color:rgb(240, 241, 255)
+font-size: 3vw;
+color:rgb(176, 183, 221)
+
+}
+
+.left-login-image{
+ 
+  width: 25vw;
+  
 
 }
 
@@ -57,13 +68,70 @@ color:rgb(240, 241, 255)
   padding:30px 35px;   /**margem interna do card-login. o primeiro eixo é Y e o segundo é X**/
   background-color: rgb(52, 63, 117);
   border-radius: 25px;
-  box-shadow:  0px 10px 40px  rgb(33, 36, 58)  /**o primeiro eixo é X e o segundo é Y, o terceiro valor é o blur e o quarto é a cor**/
+  box-shadow:  0px 10px 40px  rgb(43, 43, 77)  /**o primeiro eixo é X e o segundo é Y, o terceiro valor é o blur e o quarto é a cor**/
 
 
 }
 
 .card-login >h1 {
 
-  color:rgb(240, 241, 255)
+  color: rgb(176, 183, 221);
+  font-weight: 800;   /**grossura da fonte no card login**/
+  margin: 0;
   
+  }
+
+  .textfield{ /**aparência do local onde se escreve as informações do usuário**/
+    
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items:flex-start;
+     justify-content:center;
+     margin:10px 0px;
+
+  }
+
+  .textfield > input{
+      width: 100%;
+      border: none;
+      border-radius:10px;
+      padding: 15px;
+      background-color: #707baf; 
+      outline: none;
+      box-sizing: border-box;
+
+  }
+
+  .textfield > label{
+
+    color: #707baf;
+    margin-bottom: 10px;
+
+
+  }
+
+  .textfield > input::placeholder{
+
+    color:rgb(55, 55, 99);
+    margin-bottom: 10px;
+
+
+  }
+
+  .btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color:rgb(55, 55, 99);
+    background-color: rgb(140, 149, 202); 
+    cursor: pointer;
+    box-shadow:  0px 0px 80px  rgb(140, 149, 202); 
+   
   }
